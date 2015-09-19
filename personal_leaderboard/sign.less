@@ -1,0 +1,97 @@
+@import "grid.less";
+
+.title{
+    border-radius: 2px;
+    border: 2px solid #39CCCC;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 4px;
+    text-align: center;
+    color: #39CCCC;
+    margin-bottom: 4px;
+}
+
+.stats-wrapper{
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    .stat-title{
+        .column(12);
+        position:relative;
+        .location{
+            .column(2);
+            height:1px;
+        }
+        .rates{
+            display:inline;
+            .column(9.5);
+            .push(0.2);
+            .title-sub{
+                .column(4.5);
+                .push(1.5);
+                display: inline;
+                color: #2ECC40;
+            }
+        }
+
+    }
+    .stat{
+        .column(12);
+        position:relative;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #D0CECE;
+        margin-top: 14px;
+        .location{
+
+
+            .column(2);
+            display:inline;
+            font-family:sans-serif;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding-right: 2px;
+            padding-left: 2px;
+            color: gray;
+            .start{
+                .column(4);
+                display:inline;
+                font-size: 14px;
+            }
+            .arrow{
+                .column(3);
+                display:inline;
+            }
+            .end{
+                .column(4);
+                display:inline;
+                font-size: 14px;
+            }
+        }
+        .rates{
+            display:inline;
+            .column(9.5);
+            .push(0.2);
+            .inner-rate{
+                .column(6);
+                position: relative;
+                display:inline;
+                .clock{
+                    .column(7.2);
+                    display:inline;
+                    font-size: 18px;
+                    font-family: monospace;
+
+                }
+                .speed{
+                    .column(5);
+                    display:inline;
+                    position:absolute;
+                    bottom:0;
+                    font-size:12px;
+                    color : #FF4136;
+                }
+            }
+        }
+    }
+}
