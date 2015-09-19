@@ -1,21 +1,33 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="sign.css">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/common.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/map.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/util.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/marker.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/onion.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/controls.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/5a/stats.js"></script>
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
         <script src="../app/app.js"></script>
+        <script src="../app/angular-google-maps.js"></script>
         <script src="../app/mapController.js"></script>
     </head>
     <body ng-app = "app">
-        <div class="header">
-            <div id = "time">
+        <div id="header">
+            <div id="time" class="inline">
                 <h4>25</h4>
                 <p>min</p>
             </div>
-            <div id = "speed">
+            <div id="speed" class="inline">
                 <h4>195</h4>
                 <p>mph</p>
             </div>
-            <div id = "something">
+            <div id="something" class="inline">
                 <h4>195</h4>
                 <p>mph</p>
             </div>
