@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="sign.css">
+        <link rel="stylesheet" type="text/css" href="stats.css">
     </head>
     <body>
         <div class="stats-wrapper">
@@ -19,20 +19,20 @@
                     </div>
                 </div>
             </div>
-            <div class="stat">
+            <div class="stat" ng-repeat="stat in data">
                 <div class = "location">
-                    <p class="start">HA</p>
+                    <p class="start">{{stat.start}}</p>
                     <p class="arrow">&#8594;</p>
-                    <p class="end">TO</p>
+                    <p class="end">{{stat.end}}</p>
                 </div>
                 <div class="rates">
                     <div class="personal inner-rate">
-                        <p class="clock">2:49:24</p>
-                        <p class="speed">249 kph</p>
+                        <p class="clock">{{stat.time}}</p>
+                        <p class="speed">{{stat.speed}} kph</p>
                     </div>
                     <div class="record inner-rate">
-                        <p class="clock">2:49:24</p>
-                        <p class="speed">249 kph</p>
+                        <p class="clock">{{stat.recordTime}}</p>
+                        <p class="speed">{{{{stat.recordSpeed}}}}kph</p>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ app.controller('signController', function($scope, $http, $location) {
           }, function(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
-            console.log(error);
+            $location.path("/404");
           });
     }
 
@@ -28,7 +28,7 @@ app.controller('signController', function($scope, $http, $location) {
         var data = {
             username : $scope.username,
             password : $scope.password,
-            car      : $scope.car-brand
+            car      : $scope.car_brand
         };
         $http.post('/register', data).
           then(function(response) {
@@ -40,7 +40,7 @@ app.controller('signController', function($scope, $http, $location) {
           }, function(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
-            console.log(error);
+            $location.path("/404");
           });
     }
 });
