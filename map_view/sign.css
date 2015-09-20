@@ -12,10 +12,22 @@ body:after {
   clear: both;
 }
 #header {
-  height: 10vh;
+  height: 5vh;
   width: 100%;
 }
+#header div {
+  float: left;
+}
+#header #time {
+  width: 30%;
+}
+#header #speed {
+  width: 40%;
+}
+#header #something {
+  width: 30%;
+}
 #map {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
 }
